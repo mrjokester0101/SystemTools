@@ -8,8 +8,7 @@ Basic system tools.
 * Compatibity with x64
 
 ## Installation
-[System Tools (Windows)](https://github.com/mrjokester0101/System-Tools/raw/refs/heads/main/Download/Windows/SystemTools.exe)
-[System Tools (Linux)](https://github.com/mrjokester0101/System-Tools/raw/refs/heads/main/Download/Linux/system-tools)
+Go in releases and install it from there.
 
 ## Features & Drawbacks
 Features:
