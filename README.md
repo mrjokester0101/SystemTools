@@ -135,9 +135,9 @@ sudo chmod 755 SystemTools
 
 ## 5. Install System-Wide (Recommended) (Optional)
 ```
-sudo cp Download/Linux/SystemTools /usr/local/bin/SystemTools
-sudo cp Download/Linux/SystemTools /usr/local/bin/systemtools
-sudo cp Download/Linux/SystemTools /usr/local/bin/st
+sudo cp /path/to/SystemTools /usr/local/bin/SystemTools
+sudo cp /path/to/SystemTools /usr/local/bin/systemtools
+sudo cp /path/to/SystemTools /usr/local/bin/st
 ```
 **Result:** The binary can be run by executing SystemTools, systemtools or st.
 
