@@ -2,8 +2,8 @@
 Basic system tools.
 
 ## Requirements
-* Windows 10+
-* Compatibity with x64
+* Windows 10+ or Linux
+* Compatibity with x32/x64
 
 ## Installation
 Go in releases and install it from there.
