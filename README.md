@@ -9,6 +9,7 @@ Basic system tools.
 
 ## Installation
 [System Tools (Windows)](https://github.com/mrjokester0101/System-Tools/raw/refs/heads/main/Download/Windows/SystemTools.exe)
+[System Tools (Linux)](https://github.com/mrjokester0101/System-Tools/raw/refs/heads/main/Download/Linux/system-tools)
 
 ## Features & Drawbacks
 Features:
