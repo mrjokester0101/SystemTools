@@ -114,7 +114,7 @@ Invoke-PS2EXE .\SystemTools-Source.ps1 .\SystemTools.exe -noConsole
 
 ## 4. Compilation
 ```
-gcc SystemTools-Source.c -static -Os -s -o SystemTools
+gcc SystemTools.c -static -Os -s -o SystemTools
 sudo chmod 755 SystemTools
 ```
 **gcc options explained:**
