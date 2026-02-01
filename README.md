@@ -23,7 +23,6 @@ Drawbacks:
 * Doesn't show all installed software and running processes
 
 > [!NOTE]
-> This application is on version 1.0.1 so expect bugs.<br>
 > Also i'm just enjoying learning more about scripting/programming and learning as I go.<br>
 > I'm a person who enjoys working alone so don't take it personally if i don't accept pull requests.
 
