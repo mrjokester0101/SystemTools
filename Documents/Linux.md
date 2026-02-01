@@ -13,7 +13,6 @@
 `SystemTools` is a lightweight, all-in-one system monitoring utility combining features of top, htop, free, ls /dev, cat /proc/net/dev, and lsblk.  
 
 ### Features
-|-----------------------------|------------------------------------------------------------------------------------------------|
 | Menu Option                | Functionality                                                                                   |
 |-----------------------------|------------------------------------------------------------------------------------------------|
 | 1. System Information       | Shows hostname and kernel version (via uname).                                               |
@@ -24,14 +23,10 @@
 | 6. List /dev Devices        | Lists device nodes in /dev, 4 per line.                                                     |
 | 7. Disks                    | Shows /proc/partitions with major, minor, blocks, and device name.                           |
 | 8. Exit                     | Exit the program.                                                                             |
-|-----------------------------|------------------------------------------------------------------------------------------------|
----
 
 ## 3. How It Works Internally
 * **No external binaries:** Reads directly from /proc (cpuinfo, meminfo, net/dev, /proc/[pid]/comm, partitions) → works on minimal Linux installations.  
-
 * **Tables and formatting:** Uses printf for aligned columns and converts byte counts into human-readable units. Percentages are calculated from totals.  
-
 * **Portable:** Fully static → runs on any Linux distro, even without standard tools installed.  
 
 ## 4. Compilation
