@@ -38,7 +38,7 @@ sudo chmod 755 SystemTools
   * `-static` → produce a statically linked binary (no shared library dependencies)
   * `-Os` → optimize for size rather than speed
   * `-s` → strip all symbols (removes debugging info, smaller binary)
-  * `-o` SystemTools → specify the output binary name
+  * `-o` → specify the output binary name
 
 **chmod explained:**
 * chmod 755 SystemTools → sets the permissions of the SystemTools binary:
