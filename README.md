@@ -46,7 +46,7 @@ Install PS2EXE module and compile:
 Install-Module -Name PS2EXE -Scope CurrentUser -Force
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 Import-Module ps2exe
-ConvertTo-Exe -Script Path\To\SystemTools.ps1 -OutputFile .\SystemTools.exe
+Invoke-PS2EXE -InputFile Path\To\SystemTools.ps1 -OutputFile SystemTools.exe
 ```
 **PowerShell commands explained:**
 * install-Module -Name PS2EXE -Scope CurrentUser -Force → installs the PS2EXE module for your current user only.
