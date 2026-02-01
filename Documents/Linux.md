@@ -48,19 +48,27 @@ sudo chmod 755 SystemTools
 * `sudo` → runs the command as root, needed if your user doesn’t have permission to change the file mode
 * This makes the binary executable by everyone, but only writable by the owner.
 
-**Result:** Single, portable binary that runs anywhere.  
+**Result:** Single, portable binary, that runs on every distro.  
+
+## 5. Install System-Wide (Recommended) (Optional)
+```
+sudo cp Download/Linux/SystemTools /usr/local/bin/SystemTools
+sudo cp Download/Linux/SystemTools /usr/local/bin/systemtools
+sudo cp Download/Linux/SystemTools /usr/local/bin/st
+```
+**Result:** The binary can be run by executing SystemTools, systemtools or st.
 
 ## 5. Runtime Environment
-* **OS:** Linux kernel >= 2.6  
-* **Terminal-based:** No GUI required  
-* **Dependencies:** Only the Linux kernel and /proc filesystem  
-* **External Programs:** None needed  
+* **Linux Kernel:** >= 2.6
+* **Terminal-based:** No GUI required
+* **Dependencies:** Only the Linux kernel and /proc filesystem
+* **External Programs:** None needed
 
 ## 6. Benefits
-* Lightweight, all-in-one system tool  
-* Fully static → portable across distros  
-* Readable output  
-* Works in minimal Linux environments (LFS, WSL, rescue systems)  
+* Lightweight, all-in-one system tool
+* Fully static → portable across distros
+* Readable output
+* Works in minimal Linux environments (LFS, WSL, rescue systems)
 
 ## 7. Limitations  
 * Network stats only show /proc/net/dev interfaces  
