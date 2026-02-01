@@ -58,28 +58,28 @@ sudo cp Download/Linux/SystemTools /usr/local/bin/st
 ```
 **Result:** The binary can be run by executing SystemTools, systemtools or st.
 
-## 5. Runtime Environment
+## 6. Runtime Environment
 * **Linux Kernel:** >= 2.6
 * **Terminal-based:** No GUI required
 * **Dependencies:** Only the Linux kernel and /proc filesystem
 * **External Programs:** None needed
 
-## 6. Benefits
+## 7. Benefits
 * Lightweight, all-in-one system tool
 * Fully static → portable across distros
 * Readable output
 * Works in minimal Linux environments (LFS, WSL, rescue systems)
 
-## 7. Limitations  
+## 8. Limitations  
 * Network stats only show /proc/net/dev interfaces  
 * Not real-time: must re-run menu options to refresh data  
 * CPU cores: hyperthreaded cores are counted as separate cores. 
 
-## 8. Notes
+## 9. Notes
 * Fully functional on minimal Linux systems (no GUI, no extra packages).  
 * Best suited for quick diagnostics, monitoring, and portable troubleshooting.  
 
-## 9. Known Issues
+## 10. Known Issues
 ### Permission Issue (Binary & Compiling)
 * Sometimes the permissions are wrong and may show something different, so you'll have to run the command below to fix it:
 ```
