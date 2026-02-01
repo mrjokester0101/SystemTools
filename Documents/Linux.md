@@ -32,10 +32,21 @@
 ## 4. Compilation
 ```
 gcc SystemTools-Source.c -static -Os -s -o SystemTools
+sudo chmod 755 SystemTools
 ```
-* `-static` → no shared library dependencies  
-* `-Os` → optimize for size  
-* `-s` → strip symbols (smaller binary)  
+**gcc options explained:**
+  * `-static` → produce a statically linked binary (no shared library dependencies)
+  * `-Os` → optimize for size rather than speed
+  * `-s` → strip all symbols (removes debugging info, smaller binary)
+  * `-o` SystemTools → specify the output binary name
+
+**chmod explained:**
+* chmod 755 SystemTools → sets the permissions of the SystemTools binary:
+  - `7` → owner can read, write, execute (4+2+1)
+  - `5` → group can read and execute (4+0+1)
+  - `5` → others can read and execute (4+0+1)
+* `sudo` → runs the command as root, needed if your user doesn’t have permission to change the file mode
+* This makes the binary executable by everyone, but only writable by the owner.
 
 **Result:** Single, portable binary that runs anywhere.  
 
@@ -59,3 +70,19 @@ gcc SystemTools-Source.c -static -Os -s -o SystemTools
 ## 8. Notes
 * Fully functional on minimal Linux systems (no GUI, no extra packages).  
 * Best suited for quick diagnostics, monitoring, and portable troubleshooting.  
+
+## 9. Known Issues
+### Permission Issue (Binary & Compiling)
+* Sometimes the permissions are wrong and may show something different, so you'll have to run the command below to fix it:
+```
+sudo chmod 755 /path/to/SystemTools
+```
+
+### GCC Not Installed (Compiling)
+* Sometimes the distro your currently using doesn't have the gcc tool.
+* Make sure to install it with the package manager (assuming you have network) or install it manually.
+* If any other issue arises, please make sure to check the documents of the distro your using and follow the steps to fix it and then install gcc.
+
+### No Other Issues Reported
+* If there is another issue you may be experiencing, open a new issue. and make sure to state your distro, what you did with a screenshot & kernel version.
+* If you have edited anything in the binary or source code and followed the steps, report it in the discord server, the invite is in the README.md5.
