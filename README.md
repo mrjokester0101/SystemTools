@@ -44,7 +44,7 @@ To create an .exe from the PowerShell script:
 Install PS2EXE module and compile:
 ```
 Install-Module -Name PS2EXE -Scope CurrentUser
-Invoke-PS2EXE .\SystemTools-Source.ps1 .\SystemTools.exe -noConsole
+Invoke-PS2EXE \Path\To\SystemTools-Source.ps1 .\SystemTools.exe -noConsole
 ```
 ### Option 2: Using PowerShell + C# wrapper (NOT TESTED)
 * Wrap the script in a PowerShell object inside a C# console project  
