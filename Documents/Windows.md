@@ -64,11 +64,20 @@ Invoke-PS2EXE -InputFile Path\To\SystemTools.ps1 -OutputFile SystemTools.exe
 
 **Result:** Single, portable executable that runs on any modern Windows system without needing PowerShell to be manually invoked.
 
-## 5. Install System-Wide (Not Recommended) (Optional)
+## 5. Install System-Wide (Recommended) (Optional)
+### Option 1 (Recommended)
+```
+mv .\SystemTools Path\To\Command-line\Utilities\Folder
+$env:Path += ";Path\To\Command-line\Utilities\Folder\SystemTools"
+```
+* Makes SystemTools accessible system-wide without moving it to `C:\Windows\System32`.
+### Option 2
 ```
 Copy-Item .\SystemTools.exe C:\Windows\System32\
 ```
-* This is not recommended due to the fact windows security may flag it as a virus and delete it from there, you can just add a variable to make it execute system-wide, but you can still do this.
+* **Note:** Windows Security may flag it as a virus and delete it from System32.
+
+**Result:** You can use SystemTools system-wide.
 
 ## 6. Runtime Environment
 * **OS:** Windows 7/8/10/11 (x86/x64)  
