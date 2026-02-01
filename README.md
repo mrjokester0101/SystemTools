@@ -1,8 +1,6 @@
 # System-Tools
 Basic system tools.
 
-![image](images/SystemTools.png)
-
 ## Requirements
 * Windows 10+
 * Compatibity with x64
