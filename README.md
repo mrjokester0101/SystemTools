@@ -160,15 +160,18 @@ sudo chmod 755 SystemTools
 * `sudo` → runs the command as root, needed if your user doesn’t have permission to change the file mode
 * This makes the binary executable by everyone, but only writable by the owner.
 
+**Test:** Test the binary by running ```./SystemTools``` in the terminal, so you know it works.
+
 **Result:** Single, portable binary, that runs on every distro.  
 
 ## 5. Install System-Wide (Recommended) (Optional)
 ```
 sudo cp /path/to/SystemTools /usr/local/bin/SystemTools
+sudo chmod 755 /usr/local/bin/SystemTools
 sudo cp /path/to/SystemTools /usr/local/bin/systemtools
-sudo cp /path/to/SystemTools /usr/local/bin/st
+sudo chmod 755 /usr/local/bin/systemtools
 ```
-**Result:** The binary can be run by executing SystemTools, systemtools or st.
+**Result:** The binary can be run by executing ```SystemTools``` or ```systemtools``` in the terminal.
 
 ## 6. Runtime Environment
 * **Linux Kernel:** >= 2.6
